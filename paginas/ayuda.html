@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>HealthyFit | Ayuda</title>
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Rutas desde esta página: "../" apunta a la carpeta raíz del sitio -->
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body id="pagina-ayuda" data-pagina="ayuda">
+
+  <!-- ============ BARRA DE NAVEGACIÓN ============ -->
+  <header class="hf-nav" id="hfNav">
+    <a href="../index.html" class="hf-nav__brand" id="nav-logo">
+      <img src="../img/Logo- Diseño Web.png" alt="Logo HealthyFit" class="hf-nav__logo" id="logotipo">
+      <span class="hf-nav__name"><span>Healthy</span><span>Fit</span></span>
+    </a>
+    <button class="hf-nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navPanel"><span></span><span></span><span></span></button>
+    <div class="hf-nav__backdrop" id="navBackdrop"></div>
+    <nav class="hf-nav__panel" id="navPanel" aria-label="Principal">
+      <button class="hf-nav__close" id="navClose" aria-label="Cerrar menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+      <!-- El botón activo lo marca navbar.js con data-pagina; no uses class="active" a mano -->
+      <ul class="hf-nav__links">
+        <li><a href="../index.html" id="nav-inicio" data-pagina="inicio">Inicio</a></li>
+        <li><a href="nosotros.html" id="nav-nosotros" data-pagina="nosotros">Sobre de Nosotros</a></li>
+        <li><a href="servicios.html" id="nav-servicios" data-pagina="servicios">Servicios</a></li>
+        <li><a href="productos.html" id="nav-productos" data-pagina="productos">Productos</a></li>
+        <li><a href="contacto.html" id="nav-contacto" data-pagina="contacto">Contacto</a></li>
+        <li><a href="ayuda.html" id="nav-ayuda" data-pagina="ayuda">Ayuda</a></li>
+      </ul>
+      <div class="hf-nav__tools">
+        <form class="hf-search" role="search" action="productos.html" method="get">
+          <input type="search" name="q" id="navSearch" placeholder="Buscador" aria-label="Buscar productos">
+          <button type="submit" aria-label="Buscar"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="10" cy="10" r="6"/><path d="M15 15l6 6"/></svg></button>
+        </form>
+        <div class="hf-icons">
+          <a href="../index.html#login" class="hf-icon" id="nav-cuenta" aria-label="Mi cuenta (Login)"><svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="16" cy="11" r="6"/><path d="M4 30c0-7 5-11 12-11s12 4 12 11z"/></svg></a>
+          <a href="productos.html" class="hf-icon" id="nav-carrito" aria-label="Carrito de compras"><svg viewBox="0 0 36 32" width="34" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M1 2h5l4 18h19l4-13H8"/><path d="M14 8l2 12M20 8v12M26 8l-2 12M8 14h25"/><circle cx="13" cy="27" r="2.2" fill="currentColor"/><circle cx="27" cy="27" r="2.2" fill="currentColor"/></svg><span class="hf-badge" id="cartCount" hidden>0</span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="ayuda-inicio">
+      <div class="hero__text">
+        <h1>Ayuda</h1>
+        <p>Preguntas frecuentes. ¿No encuentras lo que buscas? Escríbenos y te ayudamos.</p>
+        <div class="hero__buttons">
+          <a href="contacto.html" class="btn btn--primary">Contáctanos</a>
+          <a href="productos.html" class="btn btn--outline">Ver productos</a>
+        </div>
+      </div>
+     
+ 
+      </span></div>
+
+<section class="portal" id="portal">
+  <div class="portal__titulo">
+    <h2>Habla con Roby </h2>
+       <p>Consultas por una  buena alimentación y una excelente rutina.</p>
+    <p>Haz clic en la imagen para continuar.</p>
+  </div>
+
+  <!-- La imagen es el enlace al otro index -->
+  <a href="../Robi - Coach de ejercicio y alimentación.html" class="portal__enlace" aria-label="Ir a la otra página">
+    <img src="../img/mascota icono.png" alt="Descripción de la imagen">
+    <span class="portal__hint">Entrar</span>
+  </a>
+</section>
+
+    </section>
+
+    <section class="wrap faq" id="preguntas">
+
+      <details open><summary>¿Cuáles son los medios de pago?</summary>
+        <p>Puedes realizar tus pagos mediante tarjetas de crédito o débito y otros medios disponibles al momento de contratar tu servicio. Los métodos de pago pueden variar según el plan o servicio seleccionado..</p></details>
+     
+      <details><summary>¿Cómo reservo un servicio?</summary>
+        <p>Para reservar un servicio, selecciona la opción que deseas y comunícate con nuestro equipo para consultar los horarios disponibles. También podrás solicitar información sobre planes personalizados, clases grupales y asesorías.</p></details>
+    
+      <details><summary>¿Hacen envíos a provincias?</summary>
+        <p>Sí, HealthyFit puede gestionar envíos de productos deportivos a diferentes ciudades y provincias. Las condiciones, costos y tiempos de entrega dependerán de la ubicación y del producto seleccionado.</p></details>
+    
+      <details><summary>¿Cómo cambio o cancelo mi plan?</summary>
+        <p>Si deseas cambiar o cancelar tu plan, comunícate con nuestro equipo de atención al cliente. Te brindaremos información sobre las opciones disponibles y los pasos necesarios para realizar la modificación o cancelación.</p></details>
+
+      <details><summary>¿Sabías que?</summary>
+        <p>Las bebidas energéticas pueden proporcionar un aumento temporal de energía y concentración, pero su consumo frecuente o excesivo puede afectar la salud. Contienen cantidades elevadas de cafeína y, en muchos casos, azúcar, lo que puede provocar alteraciones del sueño, nerviosismo y aumento del ritmo cardíaco. Por ello, es importante consumirlas con moderación y preferir opciones saludables como el agua y los jugos naturales.</p></details>
+
+    </section>
+  </main>
+
+<!-- ============ PIE DE PÁGINA ============ -->
+  <footer class="footer" id="contacto-footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="../img/Logo- Diseño Web.png" alt="Logo HealthyFit" class="logo">
+        <p class="footer__copy">Copyright 2026<br>Healthy Fit</p>
+        <div class="contacto"><h4>Números de contactos</h4><p>+51 999 999 999</p><p>+51 (01) 555 5555</p></div>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6.5c0-.7.3-1 1-1h2V2h-3c-3 0-4.5 1.8-4.5 4.4V8H7v3.5h2.5V22H14V11.5h2.8L17.3 8z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7s1.8 2.8 4.4 3.9c1.6.7 2.3.7 3.1.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.4-.3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="mailto:info@healthyfit.com" aria-label="Correo electrónico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h3><a href="paginas/productos.html">Productos</a></h3>
+        <div class="footer__group"><p>Suplementos deportivos y proteínas de alta calidad para tu rutina.</p><p>Proteína whey, creatina y aminoácidos.</p></div>
+        <div class="footer__group"><p>Ropa deportiva cómoda y resistente.</p><p>Polos, leggings y accesorios.</p></div>
+        <div class="footer__group"><p>Equipos para entrenar en casa.</p><p>Mancuernas, bandas y colchonetas.</p></div>
+      </div>
+      <div class="footer__col">
+        <h3><a href="paginas/servicios.html">Servicios</a></h3>
+        <div class="footer__group"><p>Planes de entrenamiento personalizados.</p><p>Rutinas según tus objetivos.</p></div>
+        <div class="footer__group"><p>Asesoría nutricional con especialistas.</p><p>Planes de alimentación saludable.</p></div>
+        <div class="footer__group"><p>Clases grupales y seguimiento online.</p><p>Yoga, funcional y cardio.</p></div>
+      </div>
+      <div class="footer__subscribe">
+        <h3 class="footer__pill">Suscribete</h3>
+        <p>Recibe ofertas, consejos de entrenamiento y novedades directamente en tu correo.</p>
+        <form id="subscribeForm" novalidate>
+          <input type="email" id="subscribeEmail" placeholder="@gmail" aria-label="Correo electrónico" required>
+          <button type="submit" class="btn btn--primary btn--block">Suscribirme</button>
+          <span class="form-msg" id="formMsg" role="status"></span>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Términos y condiciones · Política de privacidad</p>
+    </div>
+  </footer>
+
+  <!-- ============ AYUDAS DE UBICACIÓN ============ -->
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <div class="here" id="here" aria-live="polite">Estás en: <strong id="hereName">Ayuda</strong></div>
+  <button class="to-top" id="toTop" aria-label="Volver arriba"><svg viewBox="0 0 24 24"><path d="M12 4l9 15H3z"/></svg></button>
+
+  <script src="../JeanScrip/navbar.js"></script>
+  <script src="../JeanScrip/funciones.js"></script>
+</body>
+</html>
